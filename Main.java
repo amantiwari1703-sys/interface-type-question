@@ -1,16 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        Hello h=new Hello();
-        System.out.println(h.sayHello());
-
+        test t = new test();
+        t.show();
+        t.display();
     }
 }
-interface Greeting{
-    String sayHello();
+interface A{
+    void show();
 
 }
-class Hello implements Greeting{
-    public String sayHello(){
-        return "Hello world";
+interface B{
+    void display();
+}
+class test implements A,B{
+    public void show(){
+        System.out.println("show method");
+    }
+    public void display(){
+        System.out.println("display method");
     }
 }
