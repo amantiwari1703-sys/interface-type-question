@@ -1,18 +1,16 @@
 public class Main {
-    public static void main(String[] args){
-        Calculate c=new Calculate();
-        System.out.println(c.sum(5,3));
+    public static void main(String[] args) {
+        Hello h=new Hello();
+        System.out.println(h.sayHello());
+
     }
 }
-    interface Add{
-    int sum (int a,int b);
+interface Greeting{
+    String sayHello();
+
+}
+class Hello implements Greeting{
+    public String sayHello(){
+        return "Hello world";
     }
-
-    class Calculate implements Add{
- public int sum(int a,int b){
-     return a+b;
-
-
- }
-
-    }
+}
