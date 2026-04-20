@@ -1,22 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        test t = new test();
-        t.show();
-        t.display();
+        Demo d = new Demo();
+        d.show();
     }
 }
-interface A{
-    void show();
+interface Data{
+    int x=10;
 
 }
-interface B{
-    void display();
-}
-class test implements A,B{
+class Demo implements Data{
     public void show(){
-        System.out.println("show method");
-    }
-    public void display(){
-        System.out.println("display method");
+        System.out.println(x);
     }
 }
