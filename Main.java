@@ -1,15 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         Demo d = new Demo();
-        d.show();
+        System.out.println(d.getSquare(4));
     }
 }
-interface Data{
-    int x=10;
+interface Square{
+    int getSquare(int n);
 
-}
-class Demo implements Data{
-    public void show(){
-        System.out.println(x);
     }
-}
+ class Demo implements Square{
+    public int getSquare(int n){
+        return n*n;
+    }
+ }
+
