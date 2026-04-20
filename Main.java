@@ -1,24 +1,18 @@
 public class Main {
-    public static void main(String[] args) {
-        Cat c = new Cat();
-        Cow cw = new Cow();
-        c.sound();
-        cw.sound();
-
-
+    public static void main(String[] args){
+        Calculate c=new Calculate();
+        System.out.println(c.sum(5,3));
     }
 }
-interface Animal{
-    void sound();
-}
-class Cat implements Animal{
-    public void sound(){
-        System.out.println("cat meows");
+    interface Add{
+    int sum (int a,int b);
     }
-}
-class  Cow implements Animal{
-    public void sound(){
-        System.out.println("cow moos");
-    }
-}
 
+    class Calculate implements Add{
+ public int sum(int a,int b){
+     return a+b;
+
+
+ }
+
+    }
