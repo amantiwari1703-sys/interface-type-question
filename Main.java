@@ -1,15 +1,24 @@
-public class Main{
-    public static void main (String[] args){
-        dog d=new dog();
-        d.sound();git remote add origin https://github.com/amantiwari1703-sys/interface-type-question.git
+public class Main {
+    public static void main(String[] args) {
+        Cat c = new Cat();
+        Cow cw = new Cow();
+        c.sound();
+        cw.sound();
+
 
     }
 }
 interface Animal{
     void sound();
 }
-class dog implements Animal{
+class Cat implements Animal{
     public void sound(){
-        System.out.println("dog barks");
+        System.out.println("cat meows");
     }
 }
+class  Cow implements Animal{
+    public void sound(){
+        System.out.println("cow moos");
+    }
+}
+
