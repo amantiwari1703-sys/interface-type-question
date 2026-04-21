@@ -1,15 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Demo d = new Demo();
-        System.out.println(d.isEven(6));
+        print p = new Demo();
+        p.show();
     }
 }
-interface check {
-    boolean isEven(int n);
-
+interface print{
+    void show();
 }
-class Demo implements check{
-    public boolean isEven(int n){
-        return n%2==0;
+class Demo implements print{
+    public void show(){
+        System.out.println("interface method called");
     }
 }
