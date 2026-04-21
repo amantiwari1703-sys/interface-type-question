@@ -1,16 +1,15 @@
 public class Main {
     public static void main(String[] args) {
         Demo d = new Demo();
-        System.out.println(d.getSquare(4));
+        System.out.println(d.isEven(6));
     }
 }
-interface Square{
-    int getSquare(int n);
+interface check {
+    boolean isEven(int n);
 
+}
+class Demo implements check{
+    public boolean isEven(int n){
+        return n%2==0;
     }
- class Demo implements Square{
-    public int getSquare(int n){
-        return n*n;
-    }
- }
-
+}
